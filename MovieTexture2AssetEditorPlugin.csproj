@@ -45,22 +45,22 @@
 
   <ItemGroup>
     <Reference Include="FrostyControls">
-      <HintPath>E:\Frosty\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyControls.dll</HintPath>
+      <HintPath>C:\Users\galoy\Documents\GitHub\FrostyToolsuite_1.0.7_vol4\FrostyEditor\bin\Release\Final\FrostyControls.dll</HintPath>
     </Reference>
     <Reference Include="FrostyCore">
-      <HintPath>E:\Frosty\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyCore.dll</HintPath>
+      <HintPath>C:\Users\galoy\Documents\GitHub\FrostyToolsuite_1.0.7_vol4\FrostyEditor\bin\Release\Final\FrostyCore.dll</HintPath>
     </Reference>
     <Reference Include="FrostyHash">
-      <HintPath>E:\Frosty\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyHash.dll</HintPath>
+      <HintPath>C:\Users\galoy\Documents\GitHub\FrostyToolsuite_1.0.7_vol4\FrostyEditor\bin\Release\Final\FrostyHash.dll</HintPath>
     </Reference>
     <Reference Include="FrostyModSupport">
-      <HintPath>E:\Frosty\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyModSupport.dll</HintPath>
+      <HintPath>C:\Users\galoy\Documents\GitHub\FrostyToolsuite_1.0.7_vol4\FrostyEditor\bin\Release\Final\FrostyModSupport.dll</HintPath>
     </Reference>
     <Reference Include="FrostySdk">
-      <HintPath>E:\Frosty\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostySdk.dll</HintPath>
+      <HintPath>C:\Users\galoy\Documents\GitHub\FrostyToolsuite_1.0.7_vol4\FrostyEditor\bin\Release\Final\FrostySdk.dll</HintPath>
     </Reference>
     <Reference Include="FrostyEditor">
-      <HintPath>E:\Frosty\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyEditor.exe</HintPath>
+      <HintPath>C:\Users\galoy\Documents\GitHub\FrostyToolsuite_1.0.7_vol4\FrostyEditor\bin\Release\Final\FrostyEditor.exe</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PresentationCore" />
@@ -71,8 +71,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec
-      Command="xcopy /Y $(TargetPath) E:\Frosty\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\Plugins\" />
+    <Exec Command="xcopy /Y &quot;$(TargetPath)&quot; &quot;$(SolutionDir)$(OutDir)Plugins\&quot;" />
   </Target>
 
 </Project>

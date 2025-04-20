@@ -4,7 +4,7 @@ using Frosty.Core.Controls;
 using Frosty.Core.Windows;
 using FrostySdk.Interfaces;
 using FrostySdk.IO;
-using FrostySdk.Managers;
+using FrostySdk.Managers.Entries;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
